@@ -52,5 +52,6 @@ public class App {
         System.out.println(f + " " + d + " " + f2 + " " + d2 + " " + bol);
         System.out.println(c + " " + c1 + " " + c2);
 
+        System.out.println(result2);
     }
 }
