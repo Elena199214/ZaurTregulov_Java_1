@@ -16,8 +16,18 @@ public class Student {
     double economicsScore;
     double languageScore;
 
+     double srednyyArifmeticheskay(Student student){
+        double result =  (student.mathScore+student.languageScore+student.economicsScore)/3;
+        System.out.println("Средняя арифметическая оценка студента "+ student.name + " " + result);
+        return result;
+    }
 
 }
+
+
+//#2 Измените класс StudentTest так, чтобы среднюю арифметическую оценку студента выводил на экран метод. Т.е. создайте 1 метод,
+// * параметр которого - это объект класса Student, а в теле мпетода будет вычисляться средняя арифметическая оценка и выводиться на экран.
+
 class StudentTest {
     public static void main(String[] args) {
 
@@ -26,13 +36,14 @@ class StudentTest {
     Student student2 = new Student();
     Student student3 = new Student();
 
+
     student1.studentTicket = "111";
     student2.studentTicket = "222";
     student3.studentTicket = "333";
 
     student1.name = "Nick";
-    student1.name = "Peter";
-    student1.name = "Tom";
+    student2.name = "Peter";
+    student3.name = "Tom";
 
     student1.mathScore = 4;
     student2.mathScore = 5;
@@ -52,8 +63,8 @@ class StudentTest {
 
 
         System.out.println(student1.name + " " + result1);
-        System.out.println(student1.name + " " + result2);
-        System.out.println(student1.name + " " + result3);
-
+        System.out.println(student2.name + " " + result2);
+        System.out.println(student3.name + " " + result3);
+        student1.srednyyArifmeticheskay(student1);
 }
 }
