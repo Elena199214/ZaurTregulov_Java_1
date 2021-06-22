@@ -7,6 +7,9 @@ package HomeWork4;
  * вывестм на экран в читабельном виде среднюю арифметическую оценку каждого студента (учитывая все 3 предмета)
  */
 
+
+// * #2 Измените класс Student так, чтобы он имел 3 конструктора.1-й принимает все паоаметры. 2-й - только id, name, surname, course.
+// * 3-й не принимает значений. Создайте в классе StudentTest 3 объекта с помощью разных конструкторов.
 public class Student {
     String studentTicket;
     String name;
@@ -15,6 +18,7 @@ public class Student {
     double mathScore;
     double economicsScore;
     double languageScore;
+
 
      double srednyyArifmeticheskay(Student student){
         double result =  (student.mathScore+student.languageScore+student.economicsScore)/3;
