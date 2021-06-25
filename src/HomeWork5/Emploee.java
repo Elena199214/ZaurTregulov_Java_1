@@ -4,12 +4,18 @@ package HomeWork5;
 // *  Увеличьте зарплату каждому работнику вдвое с помощью метода и выведите на экран значение новой зарплаты.
 // */
 
+// Также создайте 3 public метода, которые будут показывать на дисплее значения этих переменных.
+// * Создайте для данного класса 3 разных констректора с  public, default и private access modifier-ами. В конструкторах присваивайте переменным
+// * класса значения из параметров. Создайте новые классы в том же и в другом пакете. Попытайтесь в них создать объекты класса Employee и вывести
+// * на экран значения переменных данного объекта с помощью метода println и методов самого класса.
+
 public class Emploee {
     int id;
-    String surname;
+   String surname;
     int age;
     double salary;
     String department;
+
 
     public Emploee(int id, String surname, int age, double salary, String department) {
         this.id = id;
